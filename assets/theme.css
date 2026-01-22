@@ -14,6 +14,7 @@ CSS CUSTOM PROPERTIES (Theme Variables)
     --theme-bg: #fffff8;
     --theme-text: #111;
     --theme-heading: #111;
+    --theme-a: rgb(23, 128, 138);
     --theme-code-bg: #f7f7f7;
     --theme-code-text: inherit;
     --theme-code-border: #e7e7e7;
@@ -42,6 +43,7 @@ html:not([data-theme]) {
     --theme-bg: #151515;
     --theme-text: #ddd;
     --theme-heading: #eee;
+    --theme-a: #72cdc4;
     --theme-code-bg: #2d2d2d;
     --theme-code-text: #e8e8e8;
     --theme-code-border: #3d3d3d;
@@ -119,12 +121,12 @@ h5 {
 a,
 a:link,
 a:visited {
-    color: inherit !important;
+    color: var(--theme-a) !important;
     background-color: transparent !important;
     text-shadow: none !important;
     background-image: none !important;
-    text-decoration: underline !important;
     text-underline-offset: 0.15em;
+    font-weight: 500;
 }
 
 code {

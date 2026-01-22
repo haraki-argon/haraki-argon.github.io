@@ -3,3 +3,24 @@ CUSTOM STYLES
 
 Add your custom CSS styles here to override or extend the default styles.
 *******************************************************************************/
+
+
+* {
+    font-family: 'Source Han Serif CN' !important;
+
+
+}
+
+:lang(en) p {
+    hyphens: auto !important;
+    hyphenate-character: '-';
+}
+
+
+:lang(zh) p {
+    text-align: left !important;
+}
+
+.heading-en {
+    font-style: normal !important;
+}

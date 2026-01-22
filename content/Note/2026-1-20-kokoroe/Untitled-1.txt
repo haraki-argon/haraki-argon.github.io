@@ -1,0 +1,29 @@
+theorem index_eq_prime_of_covby_top (p : ℕ) [Fact p.Prime]
+    {G : Type*} [Group G] [Finite G] [Fact (IsPGroup p G)]
+    {H : Subgroup G} (h_max : CovBy H ⊤) : H.index = p := by
+  set ZG := center G
+  set NGH := normalizer H
+  have h_le_normalizer : H ≤ NGH := le_normalizer
+  have center_le_normalizer : ZG ≤ NGH := center_le_normalizer
+  -- 先证明正规
+  have h_normal : H.Normal := by
+    cases em (ZG ≤ H) with
+    | inl hd =>
+      sorry
+    | inr hd =>
+      have hdr : H < NGH := by
+        by_contra h_con
+        have h_eq_ngh : H = NGH := eq_of_le_of_not_lt h_le_normalizer h_con
+        rw[← h_eq_ngh] at center_le_normalizer
+        exact hd center_le_normalizer
+      -- 利用极大子群
+      set prop_1 := ((covBy_iff_lt_and_eq_or_eq.mp h_max).right NGH)
+      set prop_2 := prop_1 h_le_normalizer le_top
+      cases prop_2 with
+      | inl hdx =>
+        rw [hdx] at hdr
+        cases (ne_of_lt hdr) rfl
+      | inr hdx =>
+        exact normalizer_eq_top_iff.mp hdx
+
+  sorry
