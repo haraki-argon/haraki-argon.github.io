@@ -8,6 +8,7 @@
     "/": "主页",
     "/Article/": "文章",
     "/Note/": "笔记",
+    "/Painting/": "作品",
     "/CV/": "Haraki",
   ),
   lang: "zh",
@@ -17,7 +18,7 @@
   // 数组格式，可以添加任意数量的内容，内容之间使用换行分隔
   header-elements: (),
   footer-elements: (
-    "© 2026 Yousa-Mirage",
+    "© 2026 Haraki",
     [Powered by #link("https://github.com/Yousa-Mirage/Tufted-Blog-Template")[Tufted-Blog-Template]],
   ),
 )

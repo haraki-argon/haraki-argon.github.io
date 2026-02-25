@@ -24,3 +24,31 @@ Add your custom CSS styles here to override or extend the default styles.
 .heading-en {
     font-style: normal !important;
 }
+
+code,
+code span {
+    font-family: consolas !important;
+}
+
+h2 {
+    margin-top: 2em !important;
+    position: relative;
+    display: inline-block;
+    z-index: 1;
+}
+
+h2::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 34%;
+    background-color: #17808a20;
+    z-index: -1;
+}
+
+html,
+body {
+    margin: 0 !important;
+}
