@@ -78,7 +78,7 @@ $ Delta f = pd(f^2, x^2) + pd(f^2, y^2) = pd(f^2, r^2) + 1/r pd(f, r) + 1/r^2 pd
 #definition(title: "微分同胚")[
   设 $Omega, Omega' subset RR^n$，映射 $Phi: Omega -> Omega'$ 称为 $C^m$ *微分同胚* ($m >= 1$)，若满足：
   1. $Phi$ 是双射；
-  2. $Phi, Phi^(-1) in C^m(Omega, Omega')$.
+  2. $Phi, Phi^(-1) in C^m (Omega, Omega')$.
   *注*：当 $m=0$ 时，仅称为同胚 (Homeomorphism).
 ]
 
