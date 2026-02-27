@@ -1,5 +1,5 @@
 #import "../index.typ": template, tufted
-#show: template
+#show: template.with(title: "域扩张")
 #import "@preview/theorion:0.4.1": *
 #import cosmos.rainbow: *
 #show: show-theorion
