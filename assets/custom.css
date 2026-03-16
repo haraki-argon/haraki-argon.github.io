@@ -52,3 +52,11 @@ html,
 body {
     margin: 0 !important;
 }
+
+body>article>section>div {
+    width: 87.3% !important;
+}
+
+div[style*="border-inline-start"] {
+    font-size: 1em;
+}
