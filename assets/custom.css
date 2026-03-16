@@ -57,6 +57,7 @@ body>article>section>div {
     width: 87.3% !important;
 }
 
-div[style*="border-inline-start"] {
+div[style*="border-inline-start"],
+li figure[role="math"] {
     font-size: 1em;
 }
