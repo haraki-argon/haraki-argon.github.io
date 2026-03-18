@@ -52,7 +52,7 @@
 *目标：证明 Lebsuege 测度的存在性.*
 
 Step 1. 外测度（Outer Measure）$m^*(Omega)$ 的定义
-$ arrow.b.double ("无可数可加性") $
+$ arrow.b.double ("no countable additivity") $
 Step 2. Lebsuege 可测集
 
 Step 3. $m(Omega):=m^*(Omega)$
@@ -78,13 +78,13 @@ $""$
 
 + (单调性) 如果 $A subset.eq B$，且 $A$ 与 $B$ 均为可测集，则 $m(A) <= m(B)$.
 
-+ (有限*次可加*性) 如果 $(A_j)_(j in J)$ 是有限个可测集的集合，则 $ m(union.big_(j in J) A_j) <= sum_(j in J) m(A_j) $
++ (次有限可加性) 如果 $(A_j)_(j in J)$ 是有限个可测集的集合，则 $ m(union.big_(j in J) A_j) <= sum_(j in J) m(A_j) $
 
 + (有限可加性) 如果 $(A_j)_(j in J)$ 是有限个互不相交的可测集的集合，则 $ m(union.big_(j in J) A_j) = sum_(j in J) m(A_j) $
 
-+ (可列*次可加*性) 如果 $(A_j)_(j in J)$ 是可列个可测集的集合，则 $ m(union.big_(j in J) A_j) <= sum_(j in J) m(A_j) $
++ (次可数可加性) 如果 $(A_j)_(j in J)$ 是可列个可测集的集合，则 $ m(union.big_(j in J) A_j) <= sum_(j in J) m(A_j) $
 
-+ (可列可加性) 如果 $(A_j)_(j in J)$ 是可列个互不相交的可测集的集合，则 $ m(union.big_(j in J) A_j) = sum_(j in J) m(A_j) $
++ (可数可加性) 如果 $(A_j)_(j in J)$ 是可列个互不相交的可测集的集合，则 $ m(union.big_(j in J) A_j) = sum_(j in J) m(A_j) $
 
 + (归一性) 单位立方体 $ [0,1]^n = {(x_1, ..., x_n) in RR^n : 0 <= x_j <= 1 ,forall 1 <= j <= n} $ 的测度为 $m([0,1]^n)=1$.
 
@@ -106,7 +106,7 @@ $""$
 
 #definition(title: "外测度, outer measure")[
   $Omega$ 是一个集合，我们定义其上的外测度为
-  $ m^*(Omega) = inf {sum_(j in J) "Vol"(B_j), (B_j){j in J} "覆盖" Omega, J "至多可数"} $
+  $ m^*(Omega) = inf {sum_(j in J) "Vol"(B_j), (B_j){j in J} "cover" Omega, J "at most countable"} $
 ]
 
 #lemma[
@@ -119,7 +119,7 @@ $""$
 
 #proposition(title: "外测度折戟于可数可加性, 1905, Vitali")[
   存在一列不交可测集 $Omega_1, Omega_2, ... subset.eq RR$ 使得
-  $ m^*(union.big_(n=1)^(oo) Omega_n) = sum_(n=1)^(oo) m^*(Omega_n) $
+  $ m^*(union.big_(n=1)^(oo) Omega_n) != sum_(n=1)^(oo) m^*(Omega_n) $
 ]
 
 #proof[
