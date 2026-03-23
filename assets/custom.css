@@ -65,3 +65,7 @@ li figure[role="math"] {
 footer {
     margin-bottom: 2em !important;
 }
+
+figure[role="math"] {
+    width: 100% !important;
+}
