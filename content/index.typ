@@ -1,5 +1,5 @@
 #import "../config.typ": template, tufted
-#show: template
+#show: template.with(title: "Haraki 的博客")
 
 = Haraki 的博客
-Typst 迭代中
+hitokoto

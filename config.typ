@@ -12,7 +12,7 @@
     "/CV/": "Haraki",
   ),
   lang: "zh",
-  title: "Tufted Blog Template", // 你的网站在浏览器中显示的标题
+  title: "Haraki 的博客", // 你的网站在浏览器中显示的标题
 
   // 自定义 header 和 footer 元素
   // 数组格式，可以添加任意数量的内容，内容之间使用换行分隔

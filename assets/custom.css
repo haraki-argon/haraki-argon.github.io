@@ -61,3 +61,7 @@ div[style*="border-inline-start"],
 li figure[role="math"] {
     font-size: 1em;
 }
+
+footer {
+    margin-bottom: 2em !important;
+}
