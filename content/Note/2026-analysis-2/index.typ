@@ -9,7 +9,7 @@
 
 - #link("3-4/")[3月4日 Banach 空间中的反函数定理]
 
-- #link("3-9/note.pdf")[3月9日 Nash-Moser 迭代（1）]
+- #link("3-9/note.pdf")[3月9日 Nash-Moser 迭代（1）$""^"pdf"$]
 
 - #link("3-11/")[3月11日 Nash-Moser 迭代（2）]
 
@@ -18,3 +18,7 @@
 - #link("3-18/")[3月18日 Lebsuege 测度]
 
 - #link("3-23/")[3月23日 Lebsuege 积分]
+
+- #link("3-25/")[3月25日 控制收敛定理，Galerkin 方法]
+
+- #link("3-30/")[3月30日 Galerkin 方法，Fubini 定理]

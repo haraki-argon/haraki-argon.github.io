@@ -1,5 +1,5 @@
-//#import "../index.typ": template, tufted
-//#show: template.with(title: "Lebsuege 测度（1）")
+#import "../index.typ": template, tufted
+#show: template.with(title: "Lebsuege 测度（1）")
 #import "@preview/theorion:0.4.1": *
 #import cosmos.rainbow: *
 #show: show-theorion
