@@ -22,3 +22,5 @@
 - #link("3-25/")[3月25日 控制收敛定理，Galerkin 方法]
 
 - #link("3-30/")[3月30日 Galerkin 方法，Fubini 定理]
+
+- #link("4-1/")[4月1日 Maxwell 方程的微分形式表达]
