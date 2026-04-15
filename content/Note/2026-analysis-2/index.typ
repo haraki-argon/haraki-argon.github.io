@@ -24,3 +24,5 @@
 - #link("3-30/")[3月30日 Galerkin 方法，Fubini 定理]
 
 - #link("4-1/")[4月1日 Maxwell 方程的微分形式表达]
+
+- #link("4-15/")[4月15日 Stokes 公式和 Possion 方程]
