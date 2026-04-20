@@ -1,5 +1,5 @@
 #import "../index.typ": template, tufted
-#show: template.with(title: "Stokes 公式和 Possion 方程")
+#show: template.with(title: "Stokes 公式和 Poisson 方程")
 #import "@preview/theorion:0.4.1": *
 #import cosmos.rainbow: *
 #show: show-theorion
@@ -53,7 +53,7 @@
 
 见书 DIFFERENTIAL FORMS AND APPLICATIONS (MANFREDO P.DO CARMO etc.)  63 页.
 
-== Possion equation
+== Poisson equation
 
 $"d" * "d" u=f nu=f sqrt("det"g) "d"x_1 and "d"x_2 and ... and "d"x_n$.
 
@@ -72,7 +72,7 @@ $g_p:T_p M times T_p M -> RR$
 
 定义 Volume form $Omega=sqrt("det"g) "d"x_1 and "d"x_2 and ... and "d"x_n$.
 
-=== $S^2$ 上的度量和possion 方程
+=== $S^2$ 上的度量和Poisson 方程
 
 以极坐标 $theta,phi$ 作为坐标卡，则 $S^2$ 上的度量为
 
@@ -95,7 +95,7 @@ $ "d"theta and * "d"theta = ("d"theta,"d"theta)Omega=sin theta "d"theta and "d"p
 
 $ *"d"theta= sin theta "d"phi , * "d"phi=-1/(sin theta) "d"theta $
 
-那么，对 Possion 方程左侧 $"d"*"d"u$，其是什么呢？
+那么，对 Poisson 方程左侧 $"d"*"d"u$，其是什么呢？
 
 
 设 $ "d"u=partial_theta u "d"theta + partial_phi u "d"phi $
@@ -108,7 +108,7 @@ $ *"d"theta= sin theta "d"phi , * "d"phi=-1/(sin theta) "d"theta $
 
 （試験内容以上っていわれた）
 
-我们现在来考虑上半球面上的 possion 方程：
+我们现在来考虑上半球面上的 Poisson 方程：
 
 $
   cases(

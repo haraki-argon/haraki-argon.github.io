@@ -25,6 +25,6 @@
 
 - #link("4-1/")[4月1日 Maxwell 方程的微分形式表达]
 
-- #link("4-15/")[4月15日 Stokes 公式和 Possion 方程]
+- #link("4-15/")[4月15日 Stokes 公式和 Poisson 方程]
 
 - #link("4-20/")[4月20日 Riemann 流形]
