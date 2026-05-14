@@ -38,3 +38,5 @@
 - #link("5-9/")[5月9日 Fourier 分析（1）]
 
 - #link("5-11/")[5月11日 Good kernel，平方平均逼近]
+
+- #link("5-13/")[5月13日 Fourier 点态收敛，Fourier 变换]
