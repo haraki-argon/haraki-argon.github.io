@@ -40,3 +40,5 @@
 - #link("5-11/")[5月11日 Good kernel，平方平均逼近]
 
 - #link("5-13/")[5月13日 Fourier 点态收敛，Fourier 变换]
+
+- #link("5-18/")[5月18日 Fourier 变换相关、热方程]
