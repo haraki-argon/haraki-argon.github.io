@@ -1,5 +1,5 @@
-#import "../index.typ": template, tufted
-#show: template
+//#import "../index.typ": template, tufted
+//#show: template
 #set text(
   font: (
     (name: "New Computer Modern", covers: "latin-in-cjk"), // 西文字体
