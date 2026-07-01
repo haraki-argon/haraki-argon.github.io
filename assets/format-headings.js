@@ -205,17 +205,20 @@ document.addEventListener('DOMContentLoaded', function () {
 
 });
 //首页hitokoto 刷新系统
+
+
+let condition = window.location.href.includes("Painting") && document.querySelector("body > article > section > h2").innerHTML == "作品"
+if (condition) {
+    // 开始变换样式.
+    let styleElem = document.createElement('style');
+    styleElem.innerHTML = new_css;
+    document.head.appendChild(styleElem);
+}
+
 window.onload = function () {
     let hitoElem = document.querySelector("body > article > section > p");
     if (hitoElem != null && hitoElem.innerHTML == "hitokoto") {
         let u = hitokotoList[Math.floor(Math.random() * hitokotoList.length)]
         hitoElem.innerHTML = u.content + "<br>" + '<p style="color: #999;">——' + u.from + "</p>";
-    }
-    let condition = window.location.href.includes("Painting") && document.querySelector("body > article > section > h2").innerHTML == "作品"
-    if (condition) {
-        // 开始变换样式.
-        let styleElem = document.createElement('style');
-        styleElem.innerHTML = new_css;
-        document.head.appendChild(styleElem);
     }
 }
