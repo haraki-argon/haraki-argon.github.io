@@ -149,9 +149,30 @@ body > article > section > ul li p:nth-child(2) a{
     font-size:70%;
     float:right;
     font-family: Courier,'Source Han Serif CN' !important;
+    line-height: 1.2em;
+    text-align: right;
 }
 
 `
+let phone_add_css = `
+body > article > section > ul li{
+    min-width:100%;
+}
+`
+
+let phoneStyleElem = null;
+
+function updatePhoneStyle() {
+    const isPhone = window.innerWidth < 790;
+
+    if (!phoneStyleElem) {
+        phoneStyleElem = document.createElement('style');
+        phoneStyleElem.id = 'phone-add-css';
+        document.head.appendChild(phoneStyleElem);
+    }
+
+    phoneStyleElem.innerHTML = isPhone ? phone_add_css : '';
+}
 
 document.addEventListener('DOMContentLoaded', function () {
     // 选择所有级别的标题
@@ -213,6 +234,9 @@ if (condition) {
     let styleElem = document.createElement('style');
     styleElem.innerHTML = new_css;
     document.head.appendChild(styleElem);
+
+    updatePhoneStyle();
+    window.addEventListener('resize', updatePhoneStyle);
 }
 
 window.onload = function () {
