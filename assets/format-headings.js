@@ -207,7 +207,7 @@ document.addEventListener('DOMContentLoaded', function () {
 //首页hitokoto 刷新系统
 
 
-let condition = window.location.href.includes("Painting") && document.querySelector("body > article > section > h2").innerHTML == "作品"
+let condition = window.location.href.includes("Painting")
 if (condition) {
     // 开始变换样式.
     let styleElem = document.createElement('style');
