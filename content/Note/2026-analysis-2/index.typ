@@ -44,3 +44,9 @@
 - #link("5-18/")[5月18日 Fourier 变换相关、热方程]
 
 - #link("5-20/")[5月20日 热方程的极大值原理，Schwarz 交错调和提升]
+
+- #link("5-25/")[5月25日 Schwarz Alternating Method, Poisson Summation Formula, Heisenberg Uncertainty Principle]
+
+- #link("5-27/")[5月27日 Sobolev 空间，弱导数]
+
+- #link("6-8/")[6月8日 波$""^(*"未完成、额外")$]

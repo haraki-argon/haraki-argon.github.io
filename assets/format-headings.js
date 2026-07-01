@@ -109,6 +109,50 @@ var hitokotoList = [
     }
 ]
 
+let new_css = `
+body > article > section > ul li{
+    display:inline-block;
+    background: linear-gradient(305deg,#fefff466,#c3c4bd66);
+    height:480px;
+    padding: 0 10px;
+    border-radius:4px;
+    border:1px solid #83838366;
+    transition:all 0.25s;
+    max-width:40%;
+}
+body > article > section > ul li:hover{
+    margin-top:-8px;
+}
+body > article > section > ul li img {
+    height: 420px;
+    width: auto;
+    object-fit: cover;      /* 防止图片因比例问题轻微变形（可选） */
+    padding-top:10px;
+    border-radius:4px;
+}
+body > article > section > ul{
+    width:75%;
+    list-style:none;
+    display: flex;          /* 开启 flex 布局 */
+    flex-direction: row;    /* 横向排列 */
+    flex-wrap: wrap;
+    gap:10px;
+}
+dt:not(:first-child), li:not(:first-child) {
+    margin-top:0;
+}
+body > article > section > ul li p{
+    margin:0;
+}
+body > article > section > ul li p:nth-child(2) a{
+    color:var(--theme-heading) !important;
+    font-size:70%;
+    float:right;
+    font-family: Courier,'Source Han Serif CN' !important;
+}
+
+`
+
 document.addEventListener('DOMContentLoaded', function () {
     // 选择所有级别的标题
     const headings = document.querySelectorAll('h1, h2, h3, h4, h5, h6');
@@ -163,8 +207,15 @@ document.addEventListener('DOMContentLoaded', function () {
 //首页hitokoto 刷新系统
 window.onload = function () {
     let hitoElem = document.querySelector("body > article > section > p");
-    if (hitoElem.innerHTML == "hitokoto") {
+    if (hitoElem != null && hitoElem.innerHTML == "hitokoto") {
         let u = hitokotoList[Math.floor(Math.random() * hitokotoList.length)]
         hitoElem.innerHTML = u.content + "<br>" + '<p style="color: #999;">——' + u.from + "</p>";
+    }
+    let condition = window.location.href.includes("Painting") && document.querySelector("body > article > section > h2").innerHTML == "作品"
+    if (condition) {
+        // 开始变换样式.
+        let styleElem = document.createElement('style');
+        styleElem.innerHTML = new_css;
+        document.head.appendChild(styleElem);
     }
 }

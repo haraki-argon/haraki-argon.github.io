@@ -1,5 +1,5 @@
-//#import "../index.typ": template, tufted
-//#show: template.with(title: "热方程")
+#import "../index.typ": template, tufted
+#show: template.with(title: "Schwarz Alternating Method, Poisson Summation Formula, Heisenberg Uncertainty Principle")
 #import "@preview/theorion:0.4.1": *
 #import cosmos.rainbow: *
 #show: show-theorion
@@ -21,7 +21,7 @@
   ),
   lang: "zh",
 )
-#show math.equation: set text(features: ("cv01",))
+#show math.equation: set text(features: ("cv0",))
 #set par(leading: 0.9em)
 #show heading.where(level: 1): set block(below: 1em, above: 2em)
 #show heading.where(level: 2): set block(below: 1em, above: 2em)

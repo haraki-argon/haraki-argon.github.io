@@ -1,5 +1,5 @@
-//#import "../index.typ": template, tufted
-//#show: template.with(title: "热方程")
+#import "../index.typ": template, tufted
+#show: template.with(title: "Sobolev Spaces in One Dimension")
 #import "@preview/theorion:0.4.1": *
 #import cosmos.rainbow: *
 #show: show-theorion
