@@ -154,6 +154,63 @@ body > article > section > ul li p:nth-child(2) a{
     padding-top: 10px;
 }
 
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 9999;
+    opacity: 0;
+    transition: opacity 0.25s ease;
+    pointer-events: none;
+}
+.overlay.is-visible {
+    opacity: 1;
+    pointer-events: auto;
+}
+.image-modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    z-index: 10000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    max-width: 90vw;
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(0.98);
+    transition: opacity 0.25s ease, transform 0.25s ease;
+    pointer-events: none;
+}
+.image-modal.is-visible {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1);
+    pointer-events: auto;
+}
+.full-screen-img {
+    display: block;
+    max-width: 80vw;
+    max-height: 72vh;
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.2);
+    object-fit: contain;
+}
+.full-screen-caption {
+    max-width: 80vw;
+    color: #fff;
+    font-size: 0.95rem;
+    line-height: 1.5;
+    text-align: center;
+    white-space: pre-wrap;
+    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.65);
+}
+@media (max-width: 760px) {
+    img {
+        width:auto;
+    }
+}
 `
 let phone_add_css = `
 body > article > section > ul li{
@@ -245,5 +302,62 @@ window.onload = function () {
     if (hitoElem != null && hitoElem.innerHTML == "hitokoto") {
         let u = hitokotoList[Math.floor(Math.random() * hitokotoList.length)]
         hitoElem.innerHTML = u.content + "<br>" + '<p style="color: #999;">——' + u.from + "</p>";
+    }
+    // 给li绑定点击事件
+    if (condition) {
+        let elem_li = document.querySelectorAll("body > article > section > ul li");
+
+        elem_li.forEach(function (li) {
+            li.addEventListener("click", function () {
+                // 在全屏幕生成一个遮罩
+                let overlay = document.createElement('div');
+                overlay.classList.add('overlay');
+                document.body.appendChild(overlay);
+                let modal = document.createElement('div');
+                modal.classList.add('image-modal');
+                //查询图片并显示img高清版
+                let img = li.querySelector("img");
+                let imgSrc = img.getAttribute("src");
+                // 把imgsrc 从 img-lowpx/something.png 改为 img/something.png
+                imgSrc = imgSrc.replace("img-lowpx", "img");
+                let fullImg = document.createElement("img");
+                fullImg.setAttribute("src", imgSrc);
+                fullImg.classList.add("full-screen-img");
+
+                let captionLink = li.querySelector("p:nth-child(2) a");
+                let caption = document.createElement('div');
+                caption.classList.add('full-screen-caption');
+                caption.textContent = captionLink ? captionLink.textContent.trim() : '';
+
+                modal.appendChild(fullImg);
+                modal.appendChild(caption);
+                document.body.appendChild(modal);
+
+                function closeModal() {
+                    overlay.classList.remove('is-visible');
+                    modal.classList.remove('is-visible');
+
+                    const removeNodes = function () {
+                        if (overlay.parentNode) {
+                            document.body.removeChild(overlay);
+                        }
+                        if (modal.parentNode) {
+                            document.body.removeChild(modal);
+                        }
+                    };
+
+                    modal.addEventListener('transitionend', removeNodes, { once: true });
+                    overlay.addEventListener('transitionend', removeNodes, { once: true });
+                }
+
+                requestAnimationFrame(function () {
+                    overlay.classList.add('is-visible');
+                    modal.classList.add('is-visible');
+                });
+
+                // 点击遮罩关闭
+                overlay.addEventListener("click", closeModal);
+            })
+        })
     }
 }
