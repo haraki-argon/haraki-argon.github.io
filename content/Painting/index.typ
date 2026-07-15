@@ -4,16 +4,21 @@
 // 我将要把它改造！
 
 = 作品
+- #link("javascript:void(0)")[#image("img-lowpx/悪ノ華.png")悪ノ華，2026/6/27]
+- #link("javascript:void(0)")[#image("img-lowpx/5.png")自由自在，2025/8/16]
+
 - #link("javascript:void(0)")[#image("img-lowpx/脱法ろっく.png")脱法ロック，2026/6/27]
 
 - #link("javascript:void(0)")[#image("img-lowpx/4.png")陽だまり，2026/3/31]
 
 - #link("javascript:void(0)")[#image("img-lowpx/1.png")How to 世界征服，2026/1/8]
 
-- #link("javascript:void(0)")[#image("img-lowpx/2.png")王泥喜 法介，2026/1/30]
+
 - #link("javascript:void(0)")[#image("img-lowpx/3.png")2026次世代社庆-次世代の春日，2026/5/7]
+
 - #link("javascript:void(0)")[#image("img-lowpx/主视觉.png")2026次世代社庆-次世代の春日主视觉，2026/5/7]
-- #link("javascript:void(0)")[#image("img-lowpx/5.png")自由自在，2025/8/16]
+- #link("javascript:void(0)")[#image("img-lowpx/2.png")王泥喜 法介，2026/1/30]
+
 - #link("javascript:void(0)")[#image("img-lowpx/6.jpg")我的心是自我摇滚，2025/12/13]
 - #link("javascript:void(0)")[#image("img-lowpx/7.png")Qanipalaat, 2024/6/30]
 - #link("javascript:void(0)")[#image("img-lowpx/madoka.png")XIII DEATH, 2025/7/13]
