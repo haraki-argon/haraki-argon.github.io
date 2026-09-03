@@ -10,7 +10,7 @@
 
 - #link("javascript:void(0)")[#image("img-lowpx/shenri.png")"解离"，2026/9/2]
 - #link("javascript:void(0)")[#image("img-lowpx/kamukura.png")神座出流，2026/9/2]
-- #link("javascript:void(0)")[#image("img-lowpx/bringiton.png")劣等上等，2026/9/2]
+- #link("javascript:void(0)")[#image("img-lowpx/bringiton.PNG")劣等上等，2026/9/2]
 
 - #link("javascript:void(0)")[#image("img-lowpx/悪ノ華.png")悪ノ華，2026/6/27]
 - #link("javascript:void(0)")[#image("img-lowpx/5.png")自由自在，2025/8/16]
