@@ -1,6 +1,11 @@
 #import "../index.typ": template, tufted
 #show: template.with(title: "Note")
 
+
+= 2026 秋笔记
+
+本学期的笔记计划以纯 pdf 形式放置在一起. 见此处【#link("../files?tag=2026F")[2026 秋笔记]】.
+
 = 2026 春笔记
 
 这个学期的末尾再来回顾，果然用平板记录笔记再转抄到电脑上并不非常现实，也不非常方便。

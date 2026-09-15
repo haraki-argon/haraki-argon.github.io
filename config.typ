@@ -9,6 +9,7 @@
     "/Article/": "文章",
     "/Note/": "笔记",
     "/Painting/": "作品",
+    "/files/": "文件",
     "/CV/": "Haraki",
   ),
   lang: "zh",
